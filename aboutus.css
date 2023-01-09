@@ -1,0 +1,474 @@
+
+body,html{
+    background-image: url(images/pattern2.png);
+    background-size: cover;
+   
+}
+header{
+    padding-left: 50px;
+    padding-right: 80px;
+   position:absolute;
+    
+}
+.left{
+    width: 70%;
+}
+.logo1{
+    width: 150px;
+    height: 112.5px;
+    margin-right: 200px;
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-links .list a{
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+}
+.list li{
+    padding: 10px;
+}
+.logo1{
+    margin-top: 30px;
+    height: inherit;
+    width: 120px;
+    margin-left: 30px;
+}
+.slide-1{
+    display: flex;
+    flex-direction: row;
+   
+}
+.btncontactus a{
+    color: white;
+    background-color: transparent;
+}
+.btncontactus a:hover{
+    background-color: rgb(116,218,201);
+    color: white;
+    box-shadow: 5px 5px 10px #888;
+}
+.story-container{
+    width: 100%;
+    padding: 100px;
+    margin: auto;
+   text-align: center;
+   background-image: url(images/aboutusbanner.png);
+   background-size:cover;
+   background-repeat: no-repeat;
+   top: 0;
+}
+.story-container .story-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+.story-container .story-wrap .story-title h1{
+    color: white;
+    padding: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.story-container .story-wrap .story-para p{
+    color: #444;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 100;
+    color: azure;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+}
+
+
+
+
+   
+.mission-container .mission-wrap{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px;
+    
+}
+
+.mission-container .mission-wrap .mission-para{
+    padding: 20px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: all 0.5s ease-in-out;
+    width: 500px;
+    margin: 20px;
+    height: 200px;
+    
+}
+.mission-container .mission-wrap .mission-para:hover{
+    
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.mission-container .mission-wrap .mission-para.para1{
+    margin-top: -5%;
+}
+.mission-container .mission-wrap .mission-para span{
+    color: #444;
+    letter-spacing: 1px;
+   
+    
+}
+.mission-container .mission-wrap .mission-para p{
+    color: #444;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 100;
+   
+    margin-bottom: 30px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.story{
+    display: flex;
+    flex-direction: row;
+    
+}
+.mission-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.contact-btn{
+    display: none;
+}
+
+.team{
+   width: 100%;
+   margin: auto;
+   margin-top: 30px;
+   text-align: justify;
+}
+
+.team .team-wrap{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.team .team-container h1{
+    font-size: 40px;
+    text-align:center;
+    color: #243c6a;
+
+}
+.team .member-info{
+    height: 300px;
+    background-color: #121c30;
+    width: 100%;
+    margin-top: -17%;
+    
+}
+.team .ahmad-info{
+    background-color: white;
+    width: 600px;
+    font-size: 18px;
+    font-weight: 440;
+    padding: 30px;
+    line-height: 28px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-left: 90%;
+    display: none;
+    position: absolute;
+    margin-top: -30%;
+    text-align: justify;
+}
+.team .christelle-info{
+    text-align: justify;
+    background-color: white;
+    width: 600px;
+    font-size: 18px;
+    font-weight: 440;
+    padding: 30px;
+    line-height: 28px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-left: -200%;
+    display: none;
+    position: absolute;
+    margin-top: -20%;
+}
+.team .team-wrap .member.ahmad:hover .ahmad-info{
+    display: block;
+}
+.team .team-wrap .member.christelle:hover .christelle-info{
+    display: block;
+}
+.team .team-wrap .member{
+    padding: 20px;
+    cursor: pointer;
+   text-align: center;
+   transition: all 0.5s ease-in-out;
+  
+}
+
+.team .team-wrap .member:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    
+    
+}
+.team .team-wrap .member:hover .prof-info p{
+    color: white;
+}
+.team .team-wrap .member .prof-img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter:contrast(70%);
+    padding: 10px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+.team .team-wrap .member .prof-img img:hover{
+    filter: none;
+}
+.team .team-wrap .member .prof-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team .team-wrap .member .prof-info span{
+    color: #444;
+    font-size: 16px;
+}
+.team .team-wrap .member .prof-info p{
+    color: #888;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.clients {
+    margin: auto;
+   padding-top: 20px;
+}
+.clients img{
+ width: 100%;
+ padding: 10px;
+}
+.clients h1{
+    font-size: 40px;
+    text-align: center;
+    color: #243c6a;
+    padding: 10px;
+    margin-top: 20px;
+}
+@media screen and (min-width: 605px) and (max-width: 1190px){
+    
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .nav-links{
+        justify-content: space-evenly;
+    }
+    .btncontactus a{
+        color: white;
+    }
+    .btncontactus:hover a{
+        border: white 1px solid;
+    }
+    .story{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+    }  
+    .story-container{
+        margin: 0;
+        width: 90%;
+        margin-top: 60px;
+    }
+    .section-wrap{
+        height: 400px;
+    }
+    .section-wrap.section-1{
+        height: 400px;
+    }
+    .section-wrap.section-2{
+        background-position-x: 20px;
+    }
+    
+    .contact-btn{
+        display: block;
+    }
+    .contact-btn a{
+        text-decoration: none;
+        color: white;
+        
+        padding: 20px;
+    }
+    .contact-btn{
+        padding: 20px;
+       padding-top: 30%;
+        width: 150px;
+        text-align: center;
+        margin: auto;
+        
+    }
+    .mission-container .mission-wrap{
+        flex-direction: column;
+    }
+    .story-container{
+       margin: 0;
+       width: 100%;
+    }
+    .team .member-info{
+        margin-top: -30%;
+    }
+
+}
+
+
+@media screen and (max-width: 605px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .nav-links{
+        justify-content: space-evenly;
+    }
+    .btncontactus a{
+        color: white;
+    }
+    .btncontactus:hover a{
+        border: white 1px solid;
+    }
+    .story{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+    }  
+    .story-container{
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        margin-top: 60px;
+    }
+
+    .story-container .story-title h1 {
+       margin-top: 20%;
+       font-size: 25px;
+       padding: 0%;
+       width: 80%;
+    }
+    .story-container .story-para {
+        margin: 0;
+        width: 80%;
+        padding: 0;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        
+    }
+    .story-container .story-para p{
+        margin-bottom: 10%;
+    }
+    .mission-container .mission-wrap{
+        margin: 0;
+        width: 100%;
+      
+    }
+    .mission-container .mission-wrap .mission-para p{
+        width: 80%;
+    }
+    .section-wrap{
+        height: 400px;
+        
+    }
+    .section-wrap.section-1{
+        height: 400px;
+        margin: 0;
+    }
+    .section-wrap.section-2{
+        background-position-x: 20px;
+        margin: 0;
+    }
+    
+    .contact-btn{
+        display: block;
+    }
+    .contact-btn a{
+        text-decoration: none;
+        color: white;
+        
+        padding: 20px;
+    }
+    .contact-btn{
+        padding: 20px;
+       padding-top: 30%;
+        width: 150px;
+        text-align: center;
+        margin: auto;
+        
+    }
+    .mission-container .mission-wrap{
+        flex-direction: column;
+    }
+    .story-container{
+       margin: 0;
+       width: 100%;
+    }
+    .team .member-info{
+        margin-top: -30%;
+    }
+    .team .team-container h1{
+        font-size: 25px;
+        width: 80%;
+    }
+    .team .team-wrap .member.ahmad:hover .ahmad-info,
+    .team .team-wrap .member.christelle:hover .christelle-info{
+display: none;
+    }        
+    .team .team-wrap{
+        flex-direction: column;
+        width: 80%;
+    }
+    .team .member-info{
+        height:150px ;
+        margin-top: 0;
+    }
+    .clients h1{
+        font-size: 25px;
+        width: 80%;
+    }
+    .clients img{
+        width: 75%;
+    }
+}
+
+  

@@ -1,0 +1,314 @@
+body{
+    background: url(images/career2.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+header{
+    background-color: rgb(255, 255, 255 , 0.2);
+}
+.career-container{
+    padding: 4%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20%;
+}
+.career-container .career-info{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-right: 10%;
+}
+.career-container .career-info h3{
+    font-size: 32px;
+    width: 100%;
+    font-weight: 500;
+    color: #243c6a;
+    text-shadow: 0px 2px 5px  #808288;
+}
+.career-container .career-info .joinus p{
+    text-align: justify;
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    color: white;
+    text-shadow: 0px 2px 5px #808288;
+    line-height: 30px;
+}
+.career-container .career-info .jobselector{
+    display: none;
+}
+.career-container .career-info .jobselector .joboffers{
+    margin-top: 10px;
+    margin-right: 10%;
+}
+.career-container .career-info .jobselector .joboffers ul{
+    list-style: none;
+}
+.career-container .career-info .jobselector .joboffers li{
+    padding: 15px;
+    border: #b3b9c5 1px solid;
+    border-bottom: none;
+    background-color: #0c1930;
+    color: #808288;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.career-container .career-info .jobselector .joboffers i{
+    padding-right: 10px;
+    float: right;
+  
+}
+.career-container .career-info .jobselector .joboffers li:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+/*toggle function script*/
+
+.career-container .jobdescription .officdescription.active1{
+    opacity: 1;
+    transform: translateX(50%);
+    transition: all 0.5s ease-in;
+}
+.career-container .jobdescription .researchdescription.active2{
+    opacity: 1;
+    transform: translateX(50%);
+    transition: all 0.5s ease-in;
+}
+.career-container .career-info .jobdescription{
+    margin-right: 10%;
+}
+.career-container .career-info .jobdescription .desctitle{
+    padding:15px 10px;
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 1px solid #b3b9c5;  
+    font-weight: 0;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.career-container .jobdescription .officdescription,
+.career-container .jobdescription .researchdescription{
+   
+  margin-top: 10%;
+   background-color: #0c1930;
+   width: 100%;
+   opacity: 0;
+   font-weight: 500;
+   color: white;
+   left: -55%;
+   position: absolute;
+   
+}
+.career-container .jobdescription .officdescription p,
+.career-container .jobdescription .researchdescription p{
+    text-align:justify;
+    padding: 20px 30px 20px 30px;
+    font-size: 16px;
+    text-indent: 20px;
+    line-height: 25px;
+    word-spacing: 1px;
+    
+}
+
+#applynow a{
+    text-decoration: none;
+    color: #808288;
+}
+#applynow {
+    padding: 10px 25px;
+    border: #646566 solid 1px; 
+    float: right;
+    display: none;
+    margin: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#applynow:hover{
+    background-color: #646566;
+    cursor: pointer;
+}
+#applynow:hover a
+{
+    
+    color: white;
+    cursor: pointer;
+}
+.career-form.pop {
+    display: block;
+}
+@media screen and (min-width: 605px) and (max-width: 1103px){
+    body{
+        background-image: url(images/career4.jpg);
+    }
+    #applynow {
+        display: block;
+    }
+}
+@media screen and (max-width: 605px){
+    body{
+        background-image: url(images/career5.jpeg);
+    }
+    #applynow {
+        display: block;
+    }
+    
+}
+.career-container .career-form{
+    position: relative;
+    width: 100%;
+}
+.career-container .career-form input, select, textarea, .cvupload{
+    cursor: pointer;
+    color: #b3b9c5;
+}
+
+.career-container .career-form .selection .title{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: #E5E5E5 1px solid;
+    color: white;
+    margin-bottom: 50px;
+}
+.career-container .career-form .selection .title option{
+    background-color: #222;
+}
+.career-container .career-form .selection .position{
+    border: none;
+    padding: 6px;
+    margin-bottom: 5px;
+    outline: none;
+    background-color: transparent;
+    border-bottom: #E5E5E5 1px solid;
+    width: 100%;
+    
+}
+.career-container .career-form .selection .positionlabel{
+    color: #E5E5E5;
+    font-size: 14px;
+}
+.career-container .career-form form{
+    width: 100%;
+    background-color: rgb(0, 0, 0 , 0.65);
+    border: none;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+}
+
+#name{
+    width: 100%;
+    height: 100px;
+
+}
+.career-container .career-form .name{ 
+    margin-top: 30px;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 0 5px;
+}
+::placeholder{
+    color: rgb(122, 122, 122);
+}
+.career-container .career-form .first{
+    width: 45%;
+}
+.career-container .career-form .first .firstname{
+    border: none;
+    padding: 5px;
+    margin-bottom: 5px;
+    outline: none;
+    background-color: transparent;
+    border-bottom: #E5E5E5 1px solid;
+    width: 100%;
+}
+.career-container .career-form .first .firstlable{
+    color: #E5E5E5;
+}
+.career-container .career-form .second{
+   width: 45%;
+    float: right;
+    margin-top: -105px;
+}
+.career-container .career-form .second .lastname{
+    margin-top: 56px;
+    padding: 5px;
+    border: none;
+    border-bottom: #E5E5E5 1px solid;
+    margin-bottom: 5px;
+    
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+}
+.career-container .career-form .second .secondlable{
+    color: #E5E5E5;
+    margin-left: 5px;
+}
+.career-container .career-form .input{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: #E5E5E5 1px solid;
+    text-decoration: none;
+    outline: none;
+    background-color: transparent;
+}
+.career-container .career-form .cvlabel{
+    color: #E5E5E5;
+    font-size: 12px;
+}
+
+/*copied from w3school to remove the arrows in the number input*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+}
+/**/
+.career-container .career-form .massageinput{
+    width: 100%;
+    border: none;
+    border-bottom: #E5E5E5 1px solid;
+    height: 100px;
+    resize: vertical;
+    outline: none;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+.career-container .career-form .lastrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.career-container .career-form .cvupload{
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px ;
+}
+.career-container .career-form .submit{
+    padding: 10px 20px;
+    background-color: aquamarine;
+    border: aquamarine 1px solid;
+    color: #222;
+    font-weight: 700;
+    float: right;
+}
+.career-container .career-form .submit:hover{
+    background-color: transparent;
+    color: white;
+    border: #E5E5E5 1px solid;
+}
+.jobdescription.disappear{
+    display: none;
+}
